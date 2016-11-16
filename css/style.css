@@ -1,0 +1,282 @@
+/*
+|Coded by:              |
+|David Wheelen          |
+|david.wheelen@gmail.com|
+|http://www.iNERD.us    |
+*/
+
+/*header styles*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#slideshow { 
+    width: 1080; 
+    height: 240px;
+    margin-bottom: 20px;
+}
+
+#slideshow > div {  
+    width: 1080; 
+    height: 240px;
+    text-align: center;
+    position: absolute; 
+
+}
+
+#header_image {
+  text-align: center;
+  width: 100%;
+  color: black;
+  background-color: #fff;
+}
+
+#header {
+  text-align: center;
+  width: 100%;
+  color: #646061;
+  background: #fff;
+  margin-top: 20px;
+}
+
+/*header styles ends*/
+
+/*description styles*/
+
+#description {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  background: #000;
+  border: 3px #7a7771;
+  padding: 10px;
+  color: #646061;
+}
+
+#ul {
+  margin-left: 31px;
+  color: #646061;
+}
+
+#hours {
+  margin-top: 40px;
+  background-color: #b2d78f;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Avenir-Medium";
+}
+
+#hours_spa {
+  margin-top: 40px;
+  color: white;
+  background-color: #9866ad;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Avenir-Medium";
+}
+/*hours styles end*/
+
+/*menu items styles*/
+h2  {
+  font-family: "Avenir-Medium";
+  font-size: 12pt;
+  color: #3b6943;
+  line-height: 13pt;
+  margin-bottom: 1em;
+}
+
+h3  {
+  font-family: "Avenir-Medium";
+  font-size: 18pt;
+  color: #3b6943;
+}
+
+#price {
+  color: #ab842f;
+  font-family: "Avenir-Roman";
+  font-size: 12pt;
+  font-style: italic;
+}
+/*menu items styles end*/
+
+/*body styles*/
+body {
+  background: #fff;
+  font-family: "Avenir-Medium";
+  font-size: 0;
+}
+/*scrolling*/
+.scrollable-content {
+      overflow-x:hidden;
+      overflow-y:scroll; // manage scrollbar content overflow settings
+    }
+    .scrollable-content::-webkit-scrollbar {
+      width:30px; // manage scrollbar width here
+    }
+    .scrollable-content::-webkit-scrollbar * {
+      background:transparent; // manage scrollbar background color here
+    }
+    .scrollable-content::-webkit-scrollbar-thumb {
+      background:rgba(255,0,0,0.1) !important; // manage scrollbar thumb background color here
+    }
+/*scrolling ends*/
+/*body styles end*/
+
+/*page styles*/
+
+* {margin: 0; padding: 0;}
+
+body {font-family: 'Ubuntu', sans-serif;}
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+}
+
+/*page styles end*/
+
+/*gallery styles*/
+
+.gallery {
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery .item {
+  float: left;
+  position: relative;
+  margin-bottom: -3px;
+}
+
+.gallery-col-4 .item {
+  width: 25%;
+}
+
+.gallery-col-3 .item {
+  width: 33.3333333333%;
+}
+
+.gallery-col-2 .item {
+  width: 50%;
+}
+
+.gallery .overlay {
+  position: absolute;
+  opacity: 0;
+  height: 90%;
+  width: 94%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  vertical-align: middle;
+  transition: opacity 400ms;
+  padding: 3%;
+}
+
+.overlay h4 {
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  top: -20px;
+  transition: all 400ms;
+  color: #A0A0A0;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  bottom: -50px;
+  transition: all 400ms;
+  color: #A0A0A0;
+}
+
+.gallery .item:hover .overlay {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+.item:hover h4 {
+  top: 0;
+}
+
+.item:hover p {
+  bottom: 0;
+}
+
+/*gallery styles ends*/
+
+/*footer styles*/
+
+#footer{
+    text-align:center;
+    color: black;
+    position: fixed;
+    bottom: 0px;
+    background-color: #efefef;
+    filter: blur(5px);
+    opacity:0.5;
+    width:100%;
+    height: auto;
+    margin: 0 0 0 -50%;
+    left:50%;
+}
+p.pos_fixed{
+    color:black;
+    font-size: large;
+    font-family: "Avenir-Medium";
+}
+
+/*footer styles ends*/
+
+/*Font Import*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);

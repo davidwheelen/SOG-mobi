@@ -1,0 +1,222 @@
+/*Coded by David Wheelen - dwheelen@shadesofgreen.org - david.wheelen@gmail.com*/
+
+/*header styles*/
+
+#header_image {
+  text-align: center;
+  width: 100%;
+  color: black;
+  background-color: #549c54;
+}
+
+#header {
+  text-align: center;
+  width: 100%;
+  color: #646061;
+  margin-top: 20px;
+}
+
+/*header styles ends*/
+
+/*description styles*/
+
+#description {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 31px;
+  margin-right: 31px;
+  background: #cac1af;
+  border: 3px #7a7771;
+  padding: 10px;
+  border-top-left-radius:1em;
+  border-top-right-radius:1em;
+  border-bottom-right-radius:1em;
+  border-bottom-left-radius:1em;
+  color: #646061;
+}
+
+#ul {
+  margin-left: 31px;
+  color: #646061;
+}
+/*description styles end*/
+
+/*hours styles*/
+#hours {
+  /*margin-top: 0px;
+  margin-left: 31px;
+  margin-right: 31px;
+  border-top-left-radius:0em;
+  border-top-right-radius:0em;
+  border-bottom-right-radius:1em;
+  border-bottom-left-radius:1em;
+  outline:5px;
+  border: 1px;
+  color: white;
+  filter: blur(5px);
+  opacity:0.8;*/
+  background-color: #b2d78f;
+  text-align: center;
+}
+/*hours styles end*/
+
+/*menu items styles*/
+h2  {
+  font-family: "Avenir-Medium";
+  font-size: 12pt;
+  color: #3b6943;
+}
+
+h3  {
+  font-family: "Avenir-Medium";
+  font-size: 18pt;
+  color: #3b6943;
+}
+p {
+  font-family: "Avenir-Roman";
+  font-size: 12pt;
+}
+#price {
+  color: #ab842f;
+  font-family: "Avenir-Roman";
+  font-size: 12pt;
+  font-style: italic;
+}
+/*menu items styles end*/
+
+/*body styles*/
+body {
+  background: #e7ead5;
+}
+/*scrolling*/
+.scrollable-content {
+      overflow-x:hidden;
+      overflow-y:scroll; // manage scrollbar content overflow settings
+    }
+    .scrollable-content::-webkit-scrollbar {
+      width:30px; // manage scrollbar width here
+    }
+    .scrollable-content::-webkit-scrollbar * {
+      background:transparent; // manage scrollbar background color here
+    }
+    .scrollable-content::-webkit-scrollbar-thumb {
+      background:rgba(255,0,0,0.1) !important; // manage scrollbar thumb background color here
+    }
+/*scrolling ends*/
+/*body styles end*/
+
+/*page styles*/
+
+* {margin: 0; padding: 0;}
+
+body {font-family: 'Ubuntu', sans-serif;}
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+}
+
+/*page styles end*/
+
+/*gallery styles*/
+
+.gallery {
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery .item {
+  float: left;
+  position: relative;
+  margin-bottom: -3px;
+}
+
+.gallery-col-4 .item {
+  width: 25%;
+}
+
+.gallery-col-3 .item {
+  width: 33.3333333333%;
+}
+
+.gallery-col-2 .item {
+  width: 50%;
+}
+
+.gallery .overlay {
+  position: absolute;
+  opacity: 0;
+  height: 90%;
+  width: 94%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  vertical-align: middle;
+  transition: opacity 400ms;
+  padding: 3%;
+}
+
+.overlay h4 {
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  top: -20px;
+  transition: all 400ms;
+  color: #A0A0A0;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  bottom: -50px;
+  transition: all 400ms;
+  color: #A0A0A0;
+}
+
+.gallery .item:hover .overlay {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+.item:hover h4 {
+  top: 0;
+}
+
+.item:hover p {
+  bottom: 0;
+}
+
+/*gallery styles ends*/
+
+/*footer styles*/
+
+#footer{
+    text-align:center;
+    color: black;
+    position: fixed;
+    bottom: 0px;
+    background-color: #efefef;
+    filter: blur(5px);
+    opacity:0.5;
+    width:100%;
+    height: 20px;
+    margin: 0 0 0 -50%;
+    left:50%;
+}
+p.pos_fixed{
+    color:black;
+    font-family:sans-serif;
+}
+
+/*footer styles ends*/
+
+/*Font Import*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
